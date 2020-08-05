@@ -13,5 +13,5 @@ const setValue = value => {
     localStorage.set(key, value);
 }
 
-return [storedValue]
+return [storedValue, setValue]
 }
