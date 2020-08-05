@@ -12,7 +12,7 @@ const App = () => {
   const [coinData, setCoinData] = useState([]);
   
   //state to make darkmode work
-  const [darkMode, setDarkMode] = useState(useDarkMode())
+  const [darkMode, setDarkMode] = useState(JSON.parse(window.localStorage.getItem('dark')))
 
   useEffect(() => {
     axios
